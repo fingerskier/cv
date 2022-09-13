@@ -1,8 +1,9 @@
 import React from 'react'
+import Highlighter from './Highlighter'
 
 
 export default function() {
   return (
-    <h1>Home</h1>
+    <Highlighter title="ASDF" />
   )
 }

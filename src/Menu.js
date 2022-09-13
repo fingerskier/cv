@@ -32,14 +32,11 @@ export default function() {
 
   return (<>
     <nav>
-      <svg viewBox="0 0 640 100">
-        {links.map((X,I)=><text
-          key={I}
-          url={X.url}
-          x={20}
-          y={16*I+20}
-        >{X.name}</text>)}
-      </svg>
+      <ul>
+        {links.map((X,I)=><li key={I}>
+          <a href={X.url}>{X.name}</a>
+        </li>)}
+      </ul>
     </nav>
   </>)
 }

@@ -16,21 +16,23 @@ import './App.css'
 
 export default function App() {
   return (<>
-    <Menu />
+    <header> <Menu /> </header>
 
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/personal" element={<Personal />} />
+          <Route path="/personal" element={<Personal />} />
 
-        <Route path="/qualifications" element={<Qualifications />} />
-        
-        <Route path="/employment" element={<Employment />} />
+          <Route path="/qualifications" element={<Qualifications />} />
+          
+          <Route path="/employment" element={<Employment />} />
 
-        <Route path="/references" element={<References />} />
-      </Routes>
-    </Router>
+          <Route path="/references" element={<References />} />
+        </Routes>
+      </Router>
+    </div>
 
     <footer>&copy;2022</footer>
   </>)
